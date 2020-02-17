@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 
-function UserCard ({ dataSet }) {
-
-    return (
-        <h1>Login: {dataSet.login}</h1>
-        <h2>Name: {dataSet.name}</h2>
-    )
-
+function UserCard(props) {
+  return (
+    <div className="user-styling">
+      <h1>Login: {props.dataSet.login}</h1>
+      <h2>Name: {props.dataSet.name}</h2>
+      {console.log(props.dataSet)}
+    </div>
+  );
 }
 
 export default UserCard;
